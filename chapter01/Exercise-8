@@ -1,0 +1,24 @@
+//8. One way to create random file or directory names is to produce a random
+BigInt and convert it to base 36, yielding a string such as "qsnvbevtomcj38o06kul" .
+Poke around Scaladoc to find a way of doing this in Scala.
+
+Resolution Exercice-8
+
+import BigInt.probablePrime
+import util.Random
+  probablePrime(100, Random).toString(36)
+
+probablePrime(100,Random)
+
+res1: String = 31y87e050gsej3d51c0v
+
+scala> probablePrime(100,Random).toString(36)
+res2: String = 373ctfuyh8y2gep6yznj
+
+scala> probablePrime(100,Random).toString(36)
+res3: String = 2a6ihgl1q3oplmd4l521
+
+
+
+
+
