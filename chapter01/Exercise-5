@@ -1,0 +1,9 @@
+//What does 10 max 2 mean? In which class is the max method defined?
+
+resolution-5
+
+res0: Int = 10
+
+Defined in the RichInt class
+
+
