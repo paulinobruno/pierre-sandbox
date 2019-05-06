@@ -1,0 +1,11 @@
+//9. How do you get the first character of a string in Scala? The last character?
+
+Resolution Exercice-9
+
+val s = "String"                            // s : String = String
+  s.head                                    // res0: Char = S
+  s. s(0)                                      // res1: Char = S
+
+
+  s.last                                    // res2: Char = g
+  s(s.length - 1)                           // res3: Char = g
