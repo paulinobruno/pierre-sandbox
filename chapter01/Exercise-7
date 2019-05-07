@@ -3,5 +3,10 @@ probablePrime(100, Random) , without any qualifiers before probablePrime and Ran
 
 Resolution Exercise-7
 
-- import BigInt.ProbablePrime
+- import BigInt.probablePrime
+
+probablePrime(100,Random)
+res5: scala.math.BigInt = 961036182538504440823437340453
+
+
 
