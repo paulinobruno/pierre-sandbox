@@ -2,8 +2,10 @@
 
 resolution-5
 
-res0: Int = 10
+scala> 10 max 2 
+res1: Int = 10
 
-Defined in the RichInt class
+-max returns greater value
+-Defined in the RichInt class
 
 
