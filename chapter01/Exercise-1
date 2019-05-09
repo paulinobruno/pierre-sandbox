@@ -1,0 +1,16 @@
+//1 In the Scala REPL, type 3. followed by the Tab key. What methods can be
+   applied?
+
+resolution:
+           3.
+!=   >             floatValue      isValidInt     to               toRadians    
+%    >=            floor           isValidLong    toBinaryString   toShort      
+&    >>            getClass        isValidShort   toByte           unary_+      
+*    >>>           intValue        isWhole        toChar           unary_-      
++    ^             isInfinite      longValue      toDegrees        unary_~      
+-    abs           isInfinity      max            toDouble         underlying   
+/    byteValue     isNaN           min            toFloat          until        
+<    ceil          isNegInfinity   round          toHexString      |            
+<<   compare       isPosInfinity   self           toInt                         
+<=   compareTo     isValidByte     shortValue     toLong                        
+==   doubleValue   isValidChar     signum         toOctalString    

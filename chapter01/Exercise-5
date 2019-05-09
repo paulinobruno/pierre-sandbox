@@ -1,0 +1,11 @@
+//What does 10 max 2 mean? In which class is the max method defined?
+
+resolution-5
+
+scala> 10 max 2 
+res1: Int = 10
+
+-max returns greater value
+-Defined in the RichInt class
+
+

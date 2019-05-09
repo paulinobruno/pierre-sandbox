@@ -1,0 +1,12 @@
+//7. What do you need to import so that you can get a random prime as
+probablePrime(100, Random) , without any qualifiers before probablePrime and Random ?
+
+Resolution Exercise-7
+
+- import BigInt.probablePrime
+
+probablePrime(100,Random)
+res5: scala.math.BigInt = 961036182538504440823437340453
+
+
+

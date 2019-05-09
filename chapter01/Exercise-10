@@ -1,0 +1,14 @@
+//10. What do the take , drop , takeRight , and dropRight string functions do? What
+advantage or disadvantage do they have over using substring ?
+
+
+take: Selects the first n elements
+  s.take(2)                                 //> res9: String = St
+  // drop: Selects all elements except first n ones
+  s.drop(2)                                 //> res10: String = ring
+  // takeRight: Selects the last n elements
+  s.takeRight(2)                            //> res11: String = ng
+  // dropRight: Selects all elements except last n ones
+  s.dropRight(2)                            //> res12: String = Stri
+  // advantage: they are much more concise and intuitive than substring
+
