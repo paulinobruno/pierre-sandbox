@@ -1,0 +1,9 @@
+//Write a for loop for computing the product of the Unicode codes of all letters
+//in a string. For example, the product of the characters in "Hello" is 9415087488L .
+
+var prod: BigInt = 1                              
+for(count <- "pierre") prod *= count
+prod   
+
+scala> prod
+res17: BigInt = 1559049024960
