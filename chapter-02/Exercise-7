@@ -1,0 +1,8 @@
+//7. Solve the preceding exercise without writing a loop. (Hint: Look at the StringOps
+//Scaladoc.)
+
+
+"pierre".foldLeft(1: BigInt)((a, b) => a * b)     
+
+scala> "pierre".foldLeft(1: BigInt)((a, b) => a * b)
+res20: BigInt = 1559049024960
