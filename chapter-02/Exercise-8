@@ -1,0 +1,8 @@
+//8. Write a function product(s : String) that computes the product, as described
+//in the preceding exercises.
+
+
+def product(s: String) = s.foldLeft(1: BigInt)((a, b) => a * b)
+
+scala> product("pierre")
+res22: BigInt = 1559049024960

@@ -1,3 +1,7 @@
 //2. What is the value of an empty block expression {} ? What is its type?
 
- Value is () and type is Unit
+val blank = {}   
+                            
+// Value is () and type is Unit
+
+//  blank  : Unit = ()
