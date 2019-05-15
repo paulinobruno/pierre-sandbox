@@ -1,0 +1,9 @@
+//9. Make the function of the preceding exercise a recursive function.
+
+def PRC(s: String): BigInt ={
+    if(s.length == 0) 1
+    else s.head * PRC(s.tail)
+}
+
+//scala> PRC("pierre")
+//res4: BigInt = 1559049024960
