@@ -315,6 +315,13 @@ exercise-10.4
 What happens when you zip together two strings, such as "Hello".zip("World") ?
 Come up with a plausible use case.
 
-solution
-scala> "Hello".zip("world")
-res7: scala.collection.immutable.IndexedSeq[(Char, Char)] = Vector((H,w), (e,o), (l,r), (l,l), (o,d))
+object exo10 {
+  def main(args: Array[String]): Unit = {
+  val caseConverter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".zip("abcdefghijklmnopqrstuvwxyz").toMap
+
+  var lower = caseConverter('D')
+
+  println(lower)
+
+}
+}
