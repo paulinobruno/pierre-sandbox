@@ -1,24 +1,25 @@
-exercise-1.4
+//exercise-1.4
 //Set up a map of prices for a number of gizmos that you covet. Then produce
 //a second map with the same keys and the prices at a 10 percent discount.
 
 val purchase = Map("sneakers ai jordan" -> 2500,"coat" -> 300, "Notbook" -> 3500 )
 purchase: scala.collection.immutable.Map[String,Int] = Map(sneakers ai jordan -> 2500, coat -> 300, Notbook -> 3500)
 
-scala> val discount = for ((k,v) <- purchase) yield (k, v*0.10)
-discount: scala.collection.immutable.Map[String,Double] = Map(sneakers ai jordan -> 250.0, coat -> 30.0, Notbook -> 350.0)
+//scala> val discount = for ((k,v) <- purchase) yield (k, v-v*0.10)
+//discount: scala.collection.immutable.Map[String,Double] = Map(sneakers ai jordan -> 250.0, coat -> 30.0, Notbook -> 350.0)
 
 
-exercise-2.4
-Write a program that reads words from a file. Use a mutable map to count
-how often each word appears. To read the words, simply use a java.util.Scanner :
-val in = new java.util.Scanner(new java.io.File("myfile.txt"))
-while (in.hasNext()) process in.next()
-Or look at Chapter 9 for a Scalaesque way.
-At the end, print out all words and their counts.
+//exercise-2.4
+//Write a program that reads words from a file. Use a mutable map to count
+//how often each word appears. To read the words, simply use a java.util.Scanner :
+//val in = new java.util.Scanner(new java.io.File("myfile.txt"))
+//while (in.hasNext()) process in.next()
+//Or look at Chapter 9 for a Scalaesque way.
+//At the end, print out all words and their counts.
 
-solution-2
-import java.io.File
+//solution-2
+//import java.io.File
+
 
 object exo2 {
 
@@ -42,44 +43,117 @@ object exo2 {
 
 }
 
-exercise-3.4
-Repeat the preceding exercise with an immutable map.
+//exercise-3.4
+//Repeat the preceding exercise with an immutable map.
+
+import java.util.Scanner
+import java.io.File
+
 solution-3
-object exo2 {
+object exo3 {
 
   def main(args: Array[String]): Unit = {
-
-    val fileName = ("/home/pierre/mappeter.txt")
-
-    var in = new java.util.Scanner(new File(fileName))
-
-    val maMap =[String, Int]()
-
-    def mProcess(s: String) = {
-
-      val c = mMap.getOrElse(s, 0)
-          maMap(s) = c + 1
+   
+   def countWordsImutable()={
+     var words = Map[String,Int]()
+      def process(word: String){
+       var count = words.getOrElse(word,0)
+       words = words + (word -> (count + 1))
+      }
+      val in = new Scanner(new File("/home/pierre/mappeter.txt"))
+      while (in.hasNext()){
+        process(in.next())
+      }
+      words
     }
 
-    while (in.hasNext()) mProcess(in.next())
-    maMap
+    val wordsImmutable = countWordsImmutable()
+    wordsImmutable foreach { case (word, count) => printf("%5d %s\n", count, word) }
+    
   }
 
 }
-exercise-4.4
-Repeat the preceding exercise with a sorted map, so that the words are
-printed in sorted order.
+//exercise-4.4
+//Repeat the preceding exercise with a sorted map, so that the words are
+//printed in sorted order.
 
-exercise-5.4
-Repeat the preceding exercise with a java.util.TreeMap that you adapt to the
-Scala API.
+solution-4
 
-exercise-6.4
-Define a linked hash map that maps "Monday" to java.util.Calendar.MONDAY , and
-similarly for the other weekdays. Demonstrate that the elements are visited
-in insertion order.
+import collection.immutable.SortedMap
+import java.util.Scanner
+import java.io.File
 
-solution-6
+
+object exo4b {
+  def main(args: Array[String]): Unit = {
+    def countWordsSorted() = {
+      var words = SortedMap[String, Int]()
+
+      def process(word: String) {
+        val count = words.getOrElse(word, 0)
+        words = words + (word -> (count + 1))
+      }
+
+      val in = new Scanner(new File("/home/pierre/mappeter.txt"))
+      while (in.hasNext()) {
+        process(in.next())
+      }
+
+      words
+    }
+
+    val wordsSorted = countWordsSorted()
+    wordsSorted foreach { case (word, count) => printf("%5d %s\n", count, word) }
+
+
+  }
+}
+
+
+
+
+//exercise-5.4
+//Repeat the preceding exercise with a java.util.TreeMap that you adapt to the
+//Scala API.
+
+
+solution-5.4
+
+import scala.collection.JavaConversions.mapAsScalaMap
+import java.util.Scanner
+import java.io.File
+
+object exo5 {
+
+  def main(args: Array[String]): Unit = {
+    def countWordsUsingTreeMap(filename: String): scala.collection.mutable.Map[String, Int] = {
+      val in = new Scanner(new File(filename))
+      val words: scala.collection.mutable.Map[String, Int] = new java.util.TreeMap[String, Int]
+
+      def process(word: String) {
+        if (words.contains(word)) words(word) += 1
+        else words(word) = 1
+      }
+
+      while (in.hasNext()) {
+        process(in.next())
+      }
+
+      words
+    }
+
+      countWordsUsingTreeMap("/home/pierre/mappeter.txt") foreach { case (word, count) => printf("%5d %s\n", count, word) }
+    }
+
+  }
+
+
+//exercise-6.4
+//Define a linked hash map that maps "Monday" to java.util.Calendar.MONDAY , and
+//similarly for the other weekdays. Demonstrate that the elements are visited
+//in insertion order.
+
+solution-6.4
 
 import collection.mutable.LinkedHashMap
 
