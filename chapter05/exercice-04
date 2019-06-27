@@ -1,0 +1,5 @@
+class Time(hrs: Int, min: Int) {
+	private val _time = hrs * 60 + min
+	
+	def before(other: Time) = _time < other._time
+}
