@@ -156,6 +156,11 @@ object exercice08 {
   }
 
 }
+/*
+ Which constructor are you choosing as the primary constructor? Why?
+-The constructor that takes all 4 values was chosen as the primary constructor. It's easy to define the other
+constructors that simply need to call the primary constructor with some default values
+*/
 
 /*
 9. Reimplement the class of the preceding exercise in Java, C#, or C++ (your
@@ -240,3 +245,25 @@ do you prefer? Why?
 */
 
 solution 5.10
+
+
+object exercice10 {
+  class Employee(){
+    private  var _name: String = "John Q. public"
+    var salary: Double = 0.0
+    
+    def this( n: String,s: Double){
+      this()
+      _name = n
+      salary = s 
+    }
+    def name = _name
+        
+  }
+
+}
+
+/*
+The rewitten one is more cosice using default value for fields.
+*/
+
