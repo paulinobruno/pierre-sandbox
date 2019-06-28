@@ -2,14 +2,11 @@
 object exercice08 {
 
   class Car(private  val manufacturer: String, val model: String, val year :Int , var license: String ){
-    def this(manufacturer: String, model: String, license: String,year: Int){
+    def this(manufacturer: String, model: String, license: String){
       this(manufacturer,model,year,"")
     }
-
-      def this(manufacturer: String,model: String,licence:String){
-      this(manufacturer,model,licence,year)
-    }
-      def this(manufacturer: String,model:String){
+    
+    def this(manufacturer: String,model:String){
       this(manufacturer,model,-1,"")
     }
 
