@@ -1,15 +1,11 @@
-
-object exercice08 {
-
-  class Car(private  val manufacturer: String, val model: String, val year :Int , var license: String ){
-    def this(manufacturer: String, model: String, license: String){
-      this(manufacturer,model,year,"")
-    }
-    
-    def this(manufacturer: String,model:String){
-      this(manufacturer,model,-1,"")
-    }
-
+class Car(val manufacture: String,
+          val modelName: String,
+          val modelYear: Int = -1,
+          val licence: String = "") {
+  def this(manufacture: String, modelName: String, license: String) {
+    this(manufacture, modelName, -1, license)
   }
 
+  override def toString: String =
+    "Car(" + manufacture + ", " + modelName + ", " + modelYear + ", " + licence + ")"
 }
