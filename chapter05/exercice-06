@@ -1,0 +1,8 @@
+solution
+object exercices06 {
+  
+  class Person(private val initialAge: Int) {
+    val age: Int = if (initialAge >= 0) initialAge else 0
+  }
+
+}

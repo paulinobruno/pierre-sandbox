@@ -1,0 +1,11 @@
+class Car(val manufacture: String,
+          val modelName: String,
+          val modelYear: Int = -1,
+          val licence: String = "") {
+  def this(manufacture: String, modelName: String, license: String) {
+    this(manufacture, modelName, -1, license)
+  }
+
+  override def toString: String =
+    "Car(" + manufacture + ", " + modelName + ", " + modelYear + ", " + licence + ")"
+}

@@ -1,0 +1,10 @@
+
+class exercice31 {
+
+  class Time(val hrs: Int, val min: Int) {
+    def before(other: Time) = {
+      (hrs < other.hrs) || (hrs == other.hrs && min < other.min)
+    }
+  }
+
+}
