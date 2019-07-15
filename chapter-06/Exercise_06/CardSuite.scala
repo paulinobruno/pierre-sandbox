@@ -1,11 +1,12 @@
 package Exercise_06
 
-object CardSuites extends Enumeration {
+object CardSuite extends Enumeration {
 
-   type CardSuits = Value
-   val Club = Value("♣")
-   val Diamond = Value("♦")
-   val Heart = Value("♥")
-   val Spade = Value("♠")
+      type CardSuite = Value
+      val Club = Value("♣")
+      val Diamond = Value("♦")
+      val Heart = Value("♥")
+      val Spade = Value("♠")
 
-}
+   }
+  
