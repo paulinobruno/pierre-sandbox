@@ -1,6 +1,6 @@
 package Exercise_06
 
-object CardSuits extends Enumeration {
+object CardSuites extends Enumeration {
 
    type CardSuits = Value
    val Club = Value("♣")
