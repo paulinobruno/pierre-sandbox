@@ -15,5 +15,5 @@ object RGBcolors extends Enumeration {
   val Cyan = Value(0x00ffff, "Cyan")
   val Blue = Value(0x0000ff, "Blue")
 
-'
+
 }
