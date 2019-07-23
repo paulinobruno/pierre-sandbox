@@ -5,7 +5,5 @@ Hello World should print World Hello .*/
 package Exercise_05
 
 object Reverse extends App {
-  /* print(args.reverse.mkString("Hello World"))*/
-   for(s <- args.reverse) print(s + "pierre anne ")
-   println()
+   println(args.reverse.mkString(" "))
 }
