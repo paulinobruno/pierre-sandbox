@@ -9,7 +9,7 @@ object RGBcolors extends Enumeration {
   val Black = Value(0x000000,"Black")
   val Magenta = Value(0xff00ff, "Magenta")
   val White = Value(0xffffff,"White")
-  val red = Value(0xff0000,"Red")
+  val Red = Value(0xff0000,"Red")
   val Green = Value(0x00ff00,"Green")
   val Yellow = Value(0xffff00, "Yellow")
   val Cyan = Value(0x00ffff, "Cyan")
