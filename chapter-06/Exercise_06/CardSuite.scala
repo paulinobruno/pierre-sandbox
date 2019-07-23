@@ -1,3 +1,6 @@
+/*Write an enumeration describing the four playing card suits so that the toString
+method returns ß, ®, ©, or TM.*/
+
 package Exercise_06
 
 object CardSuite extends Enumeration {
