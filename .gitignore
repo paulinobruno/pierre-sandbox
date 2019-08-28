@@ -1,5 +1,3 @@
-.idea
-
 
 # Created by https://www.gitignore.io/api/intellij
 # Edit at https://www.gitignore.io/?templates=intellij
@@ -86,35 +84,3 @@ fabric.properties
 .idea/sonarlint
 
 # End of https://www.gitignore.io/api/intellij
-
-
-
-.build/production/pierre-sandbox/Exercice_02/SavingsAccount.class
-.build/production/pierre-sandbox/Exercise_01/BankAccount.class
-.build/production/pierre-sandbox/Exercise_01/CheckingAccount.class
-.build/production/pierre-sandbox/Exercise_01/CheckingAccountTest$.class
-.build/production/pierre-sandbox/Exercise_01/CheckingAccountTest$delayedInit$body.class
-.build/production/pierre-sandbox/Exercise_01/CheckingAccountTest.class
-.build/production/pierre-sandbox/Exercise_01/Conversoes$.class
-.build/production/pierre-sandbox/Exercise_01/Conversoes.class
-.build/production/pierre-sandbox/Exercise_02/GallonsToLiters$.class
-.build/production/pierre-sandbox/Exercise_02/GallonsToLiters.class
-.build/production/pierre-sandbox/Exercise_02/InchesToCentimeters$.class
-.build/production/pierre-sandbox/Exercise_02/InchesToCentimeters.class
-.build/production/pierre-sandbox/Exercise_02/MilesToKilometers$.class
-.build/production/pierre-sandbox/Exercise_02/MilesToKilometers.class
-.build/production/pierre-sandbox/Exercise_02/UnitConversion.class
-.build/production/pierre-sandbox/Exercise_03/Origin$.class
-.build/production/pierre-sandbox/Exercise_03/Origin.class
-.build/production/pierre-sandbox/Exercise_04/Point$.class
-.build/production/pierre-sandbox/Exercise_04/Point.class
-.build/production/pierre-sandbox/Exercise_05/Reverse$.class
-.build/production/pierre-sandbox/Exercise_05/Reverse$delayedInit$body.class
-.build/production/pierre-sandbox/Exercise_05/Reverse.class
-.build/production/pierre-sandbox/Exercise_06/CardSuite$.class
-.build/production/pierre-sandbox/Exercise_06/CardSuite.class
-.build/production/pierre-sandbox/Exercise_08/RGBcolors$.class
-.build/production/pierre-sandbox/Exercise_08/RGBcolors.class
-.build/production/pierre-sandbox/main$.class
-.build/production/pierre-sandbox/main$delayedInit$body.class
-.build/production/pierre-sandbox/main.class
