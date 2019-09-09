@@ -5,7 +5,7 @@ of a toy inheritance hierarchy, perhaps involving employees, pets, graphical
 shapes, or the like. Implement the example in Scala.
   */
 
-package Exercice_3
+package Exercice_03
 
 abstract class Shape {
 
