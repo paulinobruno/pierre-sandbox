@@ -4,9 +4,10 @@ Rectangle and Circle . Provide appropriate constructors for the subclasses and
 override the centerPoint method in each subclass.
   */
 
-package Exercice_06
+package exercice_06
 
-import Exercice_05.Exercise_05.Point
+import exercise_05.Exercise_05.Point
+
 
 abstract class Shape {
   def centerPoint: Point

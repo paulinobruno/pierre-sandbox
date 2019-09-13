@@ -5,7 +5,7 @@
   * new LabeledPoint("Black Thursday", 1929, 230.07)
   */
 
-package Exercice_05
+package exercise_05
 
 object Exercise_05 extends App {
 

@@ -5,7 +5,7 @@ there? How many name getter methods are there? What do they get? (Hint:
 Use the -c and -private options.)
   */
 
-package Exercice_08
+package exercise_08
 
 class Person (val name: String){
   override def toString = getClass.getName + "[name=" + name +"]"

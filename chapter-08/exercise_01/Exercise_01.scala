@@ -4,7 +4,7 @@ Extend the following BankAccount class to a CheckingAccount class that charges $
 for every deposit and withdrawal.
   */
 
-package Exercice_01
+package exercice_01
 
 class BankAccount(initialBalance: Double) {
   private var balance = initialBalance

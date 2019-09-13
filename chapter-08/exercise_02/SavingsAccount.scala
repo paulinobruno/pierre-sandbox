@@ -6,9 +6,9 @@
   * count in the `earnMonthlyInterest` method.
   */
 
-package Exercice_02
+package exercice_02
 
-import Exercice_01.BankAccount
+import exercice_01.BankAccount
 
 class SavingsAccount (initialBalance: Double, charges : Double,  interest:Double, balance: Double) extends BankAccount(initialBalance) {
 

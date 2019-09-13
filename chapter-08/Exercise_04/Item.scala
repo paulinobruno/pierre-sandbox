@@ -7,7 +7,7 @@ provide a mechanism for adding items to the bundle and a suitable description
 method.
   */
 
-package Exercice_04
+package exercise_04
 
 import scala.collection.mutable.ListBuffer
 
