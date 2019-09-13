@@ -7,7 +7,7 @@
 
 package Exercice_05
 
-object Exercice5 extends App {
+object Exercise_05 extends App {
 
   class Point(val x: Double, val y: Double)
 

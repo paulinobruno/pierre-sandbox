@@ -6,7 +6,7 @@ override the centerPoint method in each subclass.
 
 package Exercice_06
 
-import Exercice_05.Exercice5.Point
+import Exercice_05.Exercise_05.Point
 
 abstract class Shape {
   def centerPoint: Point
